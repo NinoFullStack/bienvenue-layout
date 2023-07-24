@@ -1,0 +1,33 @@
+.notification {
+  display: none;
+  grid-template-columns: 41px 1fr;
+  align-items: center;
+  width: 460px;
+  margin: 0 auto 66px;
+  border-radius: 12px;
+  border: 3px solid #3da6dc;
+  background-color: #ffffff;
+  padding: 30px;
+
+  &-details {
+    margin-left: 16px;
+  }
+
+  &-description {
+    color: #707070;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  &-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+
+  &.notification--active {
+    display: grid;
+  }
+}

@@ -1,0 +1,80 @@
+@media (max-width: 1470px) {
+  .contour {
+    .form-field__input,
+    .form-field__textarea {
+      max-width: 100%;
+    }
+
+    .form {
+      grid-gap: 0 20px;
+    }
+  }
+}
+
+@media (max-width: 1450px) {
+  .contour .form-field__label {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .contour-items {
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+    justify-content: center;
+
+    .contour-btn,
+    .contour-center {
+      justify-self: center;
+    }
+  }
+}
+
+@media (max-width: 1310px) {
+  .contour.contour--logo {
+    .form-field__label {
+      font-size: 17px;
+    }
+
+    .form-field__input,
+    .form-field__textarea {
+      max-width: 100%;
+    }
+
+    .form {
+      grid-template-columns: 1fr;
+    }
+
+    .contour-example {
+      margin-top: 50px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .contour .form {
+    grid-template-columns: 1fr;
+
+    .form-valid {
+      margin-top: 50px;
+    }
+
+    .form-field {
+      flex-direction: column;
+
+      &__label {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1120px) {
+  .contour.contour--logo {
+    .form-field__label {
+      font-size: 15px;
+    }
+  }
+}

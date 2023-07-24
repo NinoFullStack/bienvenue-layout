@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Coolvetica';
+  src: local('../fonts/Coolvetica/Coolvetica Light'), local('Coolvetica-Light'),
+    url('../fonts/Coolvetica/CoolveticaLt-Regular.woff2') format('woff2'),
+    url('../fonts/Coolvetica/CoolveticaLt-Regular.woff') format('woff'),
+    url('../fonts/Coolvetica/CoolveticaLt-Regular.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}

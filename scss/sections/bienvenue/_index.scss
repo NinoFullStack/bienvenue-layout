@@ -1,0 +1,133 @@
+.bienvenue {
+  padding-top: 58px;
+  background-image: url('../img/bienvenue/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &-main {
+    flex: 1;
+    display: flex;
+  }
+
+  &-btn {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px;
+    border-radius: 31px;
+    border: 1px solid #da3a8d;
+    background-color: #da3a8d;
+    display: block;
+    width: 370px;
+    margin: 0 auto;
+
+    &:last-child {
+      margin-top: 15px;
+    }
+  }
+
+  &.bienvenue--start {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+
+    .bienvenue-description {
+      margin: 0 40px 80px;
+    }
+  }
+
+  &-container {
+    max-width: 788px;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  &-title {
+    color: #da3a8d;
+    font-family: Coolvetica;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 103px;
+  }
+
+  &-text {
+    color: #707070;
+    font-size: 40px;
+    font-weight: 400;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &-description {
+    color: #707070;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 67px;
+  }
+
+  &-img {
+    display: block;
+    margin: 15px auto 27px;
+  }
+
+  &-title,
+  &-description,
+  &-text {
+    text-align: center;
+  }
+
+  &-items {
+    display: grid;
+    grid-template-columns: 364px 258px;
+    gap: 34px 39px;
+    justify-content: center;
+
+    .item {
+      &-text {
+        color: #707070;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 25px;
+      }
+
+      &-title {
+        color: #da3a8d;
+        font-size: 37px;
+        font-weight: 700;
+      }
+
+      &-phone {
+        margin-bottom: 19px;
+
+        span {
+          border-bottom: 1px solid #707070;
+        }
+      }
+
+      &-phone,
+      &-email {
+        display: flex;
+        align-items: center;
+        color: #707070;
+        font-size: 18px;
+        font-weight: 500;
+
+        img {
+          margin-right: 19px;
+        }
+      }
+    }
+  }
+
+  &-item {
+    box-shadow: -3px 0 6px rgba(0, 0, 0, 0.16);
+    border-radius: 18px;
+    background-color: #ffffff;
+    padding: 21px 40px 30px;
+    text-align: center;
+  }
+}

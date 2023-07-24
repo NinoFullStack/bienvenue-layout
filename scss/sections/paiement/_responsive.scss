@@ -1,0 +1,106 @@
+@media (max-width: 1380px) {
+  .paiement {
+    &-form .form {
+      &--file {
+        grid-template-columns: 1fr 140px;
+        grid-gap: 0 30px;
+      }
+
+      &-field {
+        flex-direction: column;
+        align-items: start;
+
+        &__label {
+          width: max-content;
+          margin: 0 0 5px;
+          font-size: 15px;
+        }
+
+        &__input,
+        &__textarea {
+          max-width: 100%;
+        }
+
+        &__checkboxes {
+          display: flex;
+          flex-direction: row;
+
+          .form-field__label {
+            margin-right: 15px;
+          }
+        }
+
+        &__checkbox:not(:last-child) {
+          margin-right: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .paiement {
+    .paiement-steps {
+      grid-template-columns: repeat(2, 280px);
+    }
+
+    .form-field {
+      flex-direction: column;
+      align-items: start;
+
+      &__label {
+        width: max-content;
+        margin: 0 0 5px;
+      }
+
+      &__input,
+      &__textarea {
+        max-width: 100%;
+      }
+
+      &__checkboxes {
+        display: flex;
+        flex-direction: row;
+        .form-field__label {
+          margin-right: 10px;
+        }
+      }
+
+      &__checkbox {
+        margin-right: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1120px) {
+  .paiement {
+    .paiement-steps {
+      grid-template-columns: repeat(2, 280px);
+    }
+
+    .form {
+      &--file .form-files {
+        justify-content: start;
+
+        .form-file:not(:last-child) {
+          margin-bottom: 30px;
+        }
+      }
+
+      &-field {
+        &__checkbox {
+          margin-bottom: 20px;
+        }
+
+        &__checkboxes {
+          display: flex;
+          flex-direction: column;
+          .form-field__label {
+            margin-bottom: 25px;
+          }
+        }
+      }
+    }
+  }
+}

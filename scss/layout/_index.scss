@@ -1,0 +1,29 @@
+@import './header/index';
+@import './sidebar/index';
+
+.wraper {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-areas: 'sidebar main';
+  width: 100%;
+
+  aside.sidebar {
+    grid-area: sidebar;
+  }
+
+  main.main {
+    grid-area: main;
+
+    section {
+      height: 100%;
+
+      p.text {
+        padding-left: 67px;
+        padding-bottom: 53px;
+        color: #707070;
+        font-size: 17px;
+        font-weight: 400;
+      }
+    }
+  }
+}

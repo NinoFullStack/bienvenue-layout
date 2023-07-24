@@ -1,0 +1,22 @@
+@media (max-width: 1250px) {
+  .bienvenue-title {
+    font-size: 80px;
+  }
+
+  .bienvenue-text {
+    font-size: 33px;
+  }
+
+  .bienvenue-items {
+    grid-template-columns: 1fr;
+  }
+
+  .bienvenue-items .item-phone,
+  .bienvenue-items .item-email {
+    justify-content: center;
+  }
+
+  aside.sidebar {
+    width: 360px;
+  }
+}

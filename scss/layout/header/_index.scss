@@ -1,0 +1,39 @@
+header.header {
+  padding: 16px 33px 10px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  position: relative;
+  z-index: 2;
+
+  .container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header {
+    &-logout {
+      display: none;
+      align-items: center;
+      color: #707070;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 50px;
+      text-align: left;
+      text-decoration: underline;
+
+      img {
+        margin-left: 23px;
+      }
+    }
+  }
+
+  &--auth .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 33px 19px 80px;
+
+    .header-logout {
+      display: flex;
+    }
+  }
+}
