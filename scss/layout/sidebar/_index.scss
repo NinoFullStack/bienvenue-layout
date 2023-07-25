@@ -1,5 +1,5 @@
 aside.sidebar {
-  width: 452px;
+  width: 300px;
   box-shadow: -3px 0 6px rgba(0, 0, 0, 0.16);
   background-color: #ffffff;
   position: relative;
@@ -10,7 +10,7 @@ aside.sidebar {
 
   .sidebar {
     &-navigation {
-      padding: 70px 30px 0;
+      padding: 60px 20px 0;
 
       &__user {
         box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
@@ -19,17 +19,17 @@ aside.sidebar {
         color: #fff;
         font-size: 23px;
         font-weight: 700;
-        padding: 30px 60px;
+        padding: 20px 40px;
         position: relative;
         display: block;
-        margin: 0 auto 80px;
+        margin: 0 auto 50px;
 
         .user {
           &-icon {
-            width: 78px;
-            height: 78px;
+            width: 60px;
+            height: 60px;
             position: absolute;
-            left: -39px;
+            left: -25px;
             top: -25px;
             border: 4px solid #da3a8d;
             border-radius: 50%;
@@ -39,8 +39,8 @@ aside.sidebar {
             align-items: center;
 
             img {
-              width: 29px;
-              height: 38px;
+              width: 20px;
+              height: 30px;
             }
           }
 
@@ -130,20 +130,24 @@ aside.sidebar {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 64px;
-            height: 64px;
+            width: 45px;
+            height: 45px;
             border-radius: 17px;
             margin-right: 13px;
+
+            img {
+              width: 20px;
+            }
           }
 
           &-msg {
             display: none;
             justify-content: center;
             align-items: center;
-            width: 30px;
-            height: 29px;
+            width: 25px;
+            height: 25px;
             background-color: #ff0200;
-            font-size: 17px;
+            font-size: 16px;
             font-weight: 400;
             border-radius: 50%;
             color: #ffffff;
@@ -157,7 +161,7 @@ aside.sidebar {
 
           &-title {
             color: #707070;
-            font-size: 23px;
+            font-size: 18px;
             font-weight: 700;
           }
         }
@@ -178,15 +182,15 @@ aside.sidebar {
       display: flex;
       flex-direction: column;
       text-align: center;
-      padding-top: 28px;
-      padding-bottom: 40px;
+      padding-top: 25px;
+      padding-bottom: 25px;
       padding-left: 10px;
       padding-right: 10px;
       line-height: 20px;
 
       * {
         color: #ffffff;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 300;
       }
     }

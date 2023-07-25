@@ -1,0 +1,35 @@
+<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                >
+                  <g>
+                    <g>
+                      <path
+                        fill="#c9c9c9"
+                        d="M0 16C0 7.163 7.163 0 16 0s16 7.163 16 16-7.163 16-16 16S0 24.837 0 16z"
+                      />
+                    </g>
+                    <g>
+                      <path
+                        fill="none"
+                        stroke="#fff"
+                        stroke-linecap="round"
+                        stroke-miterlimit="20"
+                        stroke-width="3"
+                        d="M9.5 10l13 12"
+                      />
+                    </g>
+                    <g>
+                      <path
+                        fill="none"
+                        stroke="#fff"
+                        stroke-linecap="round"
+                        stroke-miterlimit="20"
+                        stroke-width="3"
+                        d="M22.5 10l-13 12"
+                      />
+                    </g>
+                  </g>
+                </svg>

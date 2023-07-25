@@ -2,14 +2,14 @@ main.login {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #db398e;
+  background-image: url('../img/login/bg.png');
+  background-size: cover;
   flex: 1;
 
   .login {
     &-form {
       margin: 20px 10px;
-      max-width: 688px;
-      padding: 72px 78px 88px;
+      padding: 25px 52px 45px;
       box-shadow: 8px 3px 6px rgba(0, 0, 0, 0.16);
       border-radius: 50px;
       background-color: #ffffff;
@@ -27,25 +27,25 @@ main.login {
 
       &__img {
         display: block;
-        margin: 0 auto 51px;
+        margin: 0 auto 20px;
       }
 
       &__input {
         border-radius: 43px;
         border: 2px solid #707070;
         background-color: #ffffff;
-        padding: 32px 41px;
+        padding: 15px 20px;
         width: 100%;
 
         &[type='password'] {
-          margin-top: 38px;
+          margin-top: 30px;
           margin-bottom: 43px;
         }
 
         &,
         &::placeholder {
           color: #707070;
-          font-size: 18px;
+          font-size: 15px;
         }
       }
 
@@ -55,7 +55,7 @@ main.login {
         color: #ffffff;
         font-size: 18px;
         font-weight: 700;
-        padding: 21px 46px;
+        padding: 15px 40px;
         border-radius: 79px;
         border: 1px solid #da3a8d;
         background-color: #da3a8d;

@@ -1,5 +1,5 @@
 .bienvenue {
-  padding-top: 58px;
+  padding: 35px 0;
   background-image: url('../img/bienvenue/bg.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,14 +46,14 @@
   &-title {
     color: #da3a8d;
     font-family: Coolvetica;
-    font-size: 100px;
+    font-size: 80px;
     font-weight: 400;
-    line-height: 103px;
+    line-height: 95px;
   }
 
   &-text {
     color: #707070;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 400;
 
     span {
@@ -63,7 +63,7 @@
 
   &-description {
     color: #707070;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 67px;
@@ -71,7 +71,7 @@
 
   &-img {
     display: block;
-    margin: 15px auto 27px;
+    margin: 10px auto 27px;
   }
 
   &-title,
@@ -82,7 +82,7 @@
 
   &-items {
     display: grid;
-    grid-template-columns: 364px 258px;
+    grid-template-columns: 330px 258px;
     gap: 34px 39px;
     justify-content: center;
 
@@ -91,12 +91,12 @@
         color: #707070;
         font-size: 18px;
         font-weight: 700;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
       }
 
       &-title {
         color: #da3a8d;
-        font-size: 37px;
+        font-size: 30px;
         font-weight: 700;
       }
 
@@ -127,7 +127,7 @@
     box-shadow: -3px 0 6px rgba(0, 0, 0, 0.16);
     border-radius: 18px;
     background-color: #ffffff;
-    padding: 21px 40px 30px;
+    padding: 21px 25px 25px;
     text-align: center;
   }
 }

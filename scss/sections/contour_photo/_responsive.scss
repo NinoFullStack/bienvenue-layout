@@ -1,80 +1,95 @@
-@media (max-width: 1470px) {
-  .contour {
-    .form-field__input,
-    .form-field__textarea {
-      max-width: 100%;
-    }
-
-    .form {
-      grid-gap: 0 20px;
-    }
-  }
-}
-
-@media (max-width: 1450px) {
-  .contour .form-field__label {
-    font-size: 15px;
-  }
-}
-
 @media (max-width: 1350px) {
-  .contour-items {
-    grid-template-columns: 1fr;
-    grid-gap: 40px;
-    justify-content: center;
-
-    .contour-btn,
-    .contour-center {
-      justify-self: center;
-    }
-  }
-}
-
-@media (max-width: 1310px) {
-  .contour.contour--logo {
-    .form-field__label {
-      font-size: 17px;
-    }
-
-    .form-field__input,
-    .form-field__textarea {
-      max-width: 100%;
-    }
-
-    .form {
-      grid-template-columns: 1fr;
-    }
-
-    .contour-example {
-      margin-top: 50px;
-    }
-  }
-}
-
-@media (max-width: 1200px) {
-  .contour .form {
-    grid-template-columns: 1fr;
-
-    .form-valid {
-      margin-top: 50px;
-    }
-
+  .contour {
     .form-field {
-      flex-direction: column;
+      &__input,
+      &__textarea {
+        max-width: 370px;
+      }
 
       &__label {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 10px;
+        width: 150px;
+        font-size: 11px;
       }
     }
   }
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1299px) {
+  .contour.contour--logo .form-field__label {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .contour {
+    &-items {
+      grid-template-columns: 1fr;
+      grid-gap: 30px;
+      margin-bottom: 50px;
+      text-align: center;
+
+      .contour-btn {
+        width: max-content;
+        justify-self: center;
+      }
+    }
+
+    .form-field {
+      &__input,
+      &__textarea {
+        max-width: 290px;
+      }
+
+      &__label {
+        width: 130px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
   .contour.contour--logo {
-    .form-field__label {
-      font-size: 15px;
+    .form {
+      grid-template-columns: 1fr;
+    }
+
+    .contour {
+      &-example {
+        margin: 40px auto 10px;
+      }
+
+      &-description {
+        margin-bottom: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .contour {
+    &-description {
+      margin-bottom: 50px;
+    }
+
+    .form {
+      grid-template-columns: 1fr;
+
+      &-fields {
+        margin-bottom: 30px;
+      }
+
+      &-field {
+        flex-direction: column;
+        &__input,
+        &__textarea {
+          max-width: 100%;
+        }
+
+        &__label {
+          width: 100%;
+          margin: 0 0 5px;
+        }
+      }
     }
   }
 }

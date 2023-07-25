@@ -1,5 +1,6 @@
 .paiement {
-  padding-top: 55px;
+  position: relative;
+  padding: 35px 0;
   background-color: #f9f7f4;
   display: flex;
   flex-direction: column;
@@ -7,24 +8,24 @@
 
   &-title {
     color: #3da6dc;
-    font-size: 57px;
+    font-size: 50px;
     font-weight: 700;
-    margin-bottom: 19px;
+    margin-bottom: 5px;
     text-align: center;
   }
 
   &-img {
     display: block;
-    margin: 0 auto 36px;
+    margin: 0 auto 15px;
   }
 
   &-description {
     color: #9a9999;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
     line-height: 24px;
     text-align: center;
-    margin-bottom: 143px;
+    margin-bottom: 60px;
 
     span {
       &.bold {
@@ -44,14 +45,21 @@
     margin: 0 auto;
   }
 
-  & .notification.notification--active {
-    margin-top: -39px;
+  .notification {
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    margin: 0 auto;
+
+    &.notification--active {
+      margin-top: -39px;
+    }
   }
 
   &-steps {
     display: grid;
-    grid-template-columns: repeat(2, 346px);
-    justify-content: space-between;
+    grid-template-columns: repeat(2, 270px);
+    justify-content: space-around;
     margin-bottom: 54px;
   }
 
@@ -61,18 +69,18 @@
     .step {
       &-title {
         color: #707070;
-        font-size: 23px;
+        font-size: 20px;
         font-weight: 700;
-        margin-bottom: 59px;
+        margin-bottom: 35px;
       }
 
       &-btn {
         width: 100%;
-        padding: 13px 20px;
+        padding: 10px;
         border-radius: 17px;
         background-color: #3da6dc;
         color: #ffffff;
-        font-size: 22px;
+        font-size: 19px;
         font-weight: 600;
         margin-bottom: 15px;
       }
@@ -80,9 +88,9 @@
       &-description {
         opacity: 0.55;
         color: #707070;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
-        line-height: 21px;
+        line-height: 18px;
         margin: 0 10px;
       }
     }
@@ -94,7 +102,7 @@
     text-align: center;
     gap: 0 62px;
     justify-content: center;
-    margin-bottom: 130px;
+    margin-bottom: 60px;
   }
 
   &-download {
@@ -183,7 +191,7 @@
       display: block;
       margin-left: auto;
       margin-top: 42px;
-      padding: 10px 60px;
+      padding: 10px 40px;
       border-radius: 10px;
       background-color: #3da6dc;
       color: #ffffff;
@@ -193,12 +201,6 @@
 
     .form-field:not(:last-child) {
       margin-bottom: 25px;
-    }
-
-    .paiement {
-      &-description {
-        margin-bottom: 89px;
-      }
     }
   }
 }
