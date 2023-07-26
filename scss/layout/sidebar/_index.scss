@@ -22,6 +22,7 @@ aside.sidebar {
         padding: 20px 40px;
         position: relative;
         display: block;
+        max-width: max-content;
         margin: 0 auto 50px;
 
         .user {
@@ -72,6 +73,7 @@ aside.sidebar {
         max-width: 100%;
         width: 295px;
         margin-bottom: 20px;
+        
 
         &--welcome,
         &--paiement,
