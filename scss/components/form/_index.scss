@@ -118,8 +118,12 @@
         width: 18px;
       }
 
-      &:hover {
-        cursor: pointer;
+      .form-field__input {
+        &[type='date']::-webkit-inner-spin-button,
+        &[type='date']::-webkit-calendar-picker-indicator {
+          opacity: 0;
+          cursor: pointer;
+        }
       }
     }
 
