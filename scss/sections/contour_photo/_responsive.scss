@@ -48,24 +48,6 @@
 }
 
 @media (max-width: 1100px) {
-  .contour.contour--logo {
-    .form {
-      grid-template-columns: 1fr;
-    }
-
-    .contour {
-      &-example {
-        margin: 40px auto 10px;
-      }
-
-      &-description {
-        margin-bottom: 60px;
-      }
-    }
-  }
-}
-
-@media (max-width: 1050px) {
   .contour {
     &-description {
       margin-bottom: 50px;
@@ -79,15 +61,32 @@
       }
 
       &-field {
-        flex-direction: column;
+        display: block;
         &__input,
         &__textarea {
           max-width: 100%;
         }
 
         &__label {
+          display: block;
           width: 100%;
           margin: 0 0 5px;
+        }
+      }
+    }
+
+    &.contour--logo {
+      .form {
+        grid-template-columns: 1fr;
+      }
+
+      .contour {
+        &-example {
+          margin: 40px auto 10px;
+        }
+
+        &-description {
+          margin-bottom: 60px;
         }
       }
     }

@@ -1,9 +1,13 @@
 .form {
   &-field {
-    display: flex;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-areas: 'label input' '. error';
     align-items: center;
+    position: relative;
 
     &__label {
+      grid-area: label;
       color: #707070;
       font-size: 15px;
       font-weight: 700;
@@ -12,8 +16,24 @@
       margin-right: 22px;
     }
 
+    &__error {
+      display: block;
+      margin-top: 6px;
+      font-size: 13px;
+      color: #ff0200;
+      grid-area: error;
+      opacity: 0;
+      position: absolute;
+      bottom: -21px;
+    }
+
     &__textarea {
       min-height: 72px;
+      grid-area: input;
+    }
+
+    &__input {
+      grid-area: input;
     }
 
     &__input,
@@ -40,6 +60,7 @@
     }
 
     &__checkbox {
+      grid-area: input;
       position: relative;
       margin-right: 55px;
       display: flex;
@@ -100,6 +121,30 @@
       &:hover {
         cursor: pointer;
       }
+    }
+
+    &.form-field--invalid {
+      margin-bottom: 35px !important;
+
+      .form-field {
+        &__error {
+          opacity: 1;
+        }
+
+        &__input {
+          border-color: #ff0200;
+        }
+
+        &__checkbox input:not(:checked) {
+          & ~ .box {
+            border-color: #ff0200;
+          }
+        }
+      }
+    }
+
+    &.form-field__checkboxes {
+      display: flex;
     }
   }
 }
