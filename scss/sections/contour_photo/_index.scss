@@ -60,6 +60,10 @@
 
     &-field {
       margin-bottom: 22px;
+
+      &__row {
+        display: flex;
+      }
     }
 
     &-valid {
