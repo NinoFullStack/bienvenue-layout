@@ -68,6 +68,11 @@
 
       .form-field {
         display: flex;
+        flex-direction: column;
+
+        input:first-child {
+          margin-bottom: 19px;
+        }
       }
 
       .valider-item__importer {
