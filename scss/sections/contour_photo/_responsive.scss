@@ -92,3 +92,9 @@
     }
   }
 }
+
+@media (max-width: 1020px) {
+  .contour.contour--visualize .visualize-items {
+    grid-gap: 35px;
+  }
+}
